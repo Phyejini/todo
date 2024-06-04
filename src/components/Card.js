@@ -49,6 +49,7 @@ const Card = ({taskObj, index, deleteTask, updateListArray}) => {
                 <div style={{"position": "absolute", "top":"160px", "left":"160px"}}>
                     <button style={{"color" : colors[index%5].primaryColor, "cursor" : "pointer"}} onClick = {() => setModal(true)}>close</button>
                     <button style = {{"color" : colors[index%5].primaryColor, "cursor" : "pointer"}} onClick = {handleDelete}>Delete</button>
+                    <button styel={{"color" : colors[index%5].primaryColor, "cursor" : "pointer"}}> 성공! </button>
                 </div>
         </div>
         <EditTask modal = {modal} toggle = {toggle} updateTask = {updateTask} taskObj = {taskObj}/>
